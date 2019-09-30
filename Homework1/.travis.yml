@@ -5,7 +5,6 @@ addons:
   apt:
     packages:
     - libboost-test-dev
-    - libspdlog-dev
 script:
 - cmake .
 - cmake --build .
@@ -15,4 +14,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ushebdim:$BINTRAY_API_KEY "https://api.bintray.com/content/shebdim/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T cmake-0.0.$TRAVIS_BUILD_NUMBER-Liux.deb -uroboter95:$BINTRAY_API_KEY "https://api.bintray.com/content/roboter95/otus-projects/Homework/$TRAVIS_BUILD_NUMBER/cmake-0.0.$TRAVIS_BUILD_NUMBER-Liux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
