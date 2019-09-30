@@ -3,3 +3,4 @@
 CMakeBuilds/
 
 CMakeSettings\.json
+version.h.in
