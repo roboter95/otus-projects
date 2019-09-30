@@ -6,10 +6,10 @@ addons:
     packages:
     - libboost-test-dev
 script:
-- cmake Homework1\
-- cmake --build Homework1\
-- cmake --build Homework1\ --target test
-- cmake --build Homework1\ --target package
+- cmake Homework1
+- cmake --build Homework1
+- cmake --build Homework1 --target test
+- cmake --build Homework1 --target package
 deploy:
   provider: script
   skip_cleanup: true
