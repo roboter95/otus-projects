@@ -11,10 +11,8 @@ script:
 - cmake --build .
 - cmake --build . --target test_version
 - cmake --build . --target package
-- ./helloworld
-- ./test_version
 deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -f -T cmake-0.1.$TRAVIS_BUILD_NUMBER-Linux.deb -uroboter95:$BINTRAY_API_KEY "https://api.bintray.com/content/roboter95/otus-projects/Homework/$TRAVIS_BUILD_NUMBER/cmake-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -f -T cmake-0.1.$TRAVIS_BUILD_NUMBER-Linux.deb -uroboter95:$BINTRAY_API_KEY "https://api.bintray.com/content/roboter95/otus-projects/Homework/$TRAVIS_BUILD_NUMBER/cmake-0.1.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
