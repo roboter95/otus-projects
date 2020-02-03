@@ -3,7 +3,7 @@
 
 int main()
 {
-	std::cout << "build WOW " << version() << std::endl;
+	std::cout << "build " << version() << std::endl;
 	std::cout << "Hello world" << std::endl;
     return 0;
 }

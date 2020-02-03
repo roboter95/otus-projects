@@ -11,8 +11,8 @@ script:
 - cmake --build .
 - cmake --build . --target test_version
 - cmake --build . --target package
-- cd Debug
 - ./helloworld
+- ./test_version
 deploy:
   provider: script
   skip_cleanup: true
