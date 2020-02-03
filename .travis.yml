@@ -9,7 +9,7 @@ script:
 - cd Homework1
 - cmake .
 - cmake --build .
-- cmake --build . --target test
+- cmake --build . --target test_version
 - cmake --build . --target package
 - cd Debug
 - ./helloworld
